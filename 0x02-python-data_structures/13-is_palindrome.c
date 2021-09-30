@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * check - recursive function to check a listint_t for a palindrome
