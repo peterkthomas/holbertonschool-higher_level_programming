@@ -1,5 +1,8 @@
 #include "lists.h"
 
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * check - recursive function to check a listint_t for a palindrome
  * @head: head node of singly linked list
