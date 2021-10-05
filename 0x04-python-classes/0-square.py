@@ -2,5 +2,6 @@
 # 0-square.py
 """ Module for Square with docstring at top """
 class Square:
-    __size = None
-    pass
+    """ Makes a size """
+    def __init__(self, size):
+        self.__size = size
