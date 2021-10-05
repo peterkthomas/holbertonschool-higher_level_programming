@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # 0-square.py
-class Square(object):
+""" Module for Square with docstring at top """
+class Square:
     """Empty class for defining a square"""
     pass
