@@ -19,11 +19,13 @@ class Square:
         return calc_area
 
     """ getter """
+    @property
     def size(self):
         """ Returns size property """
         return self.__size
 
     """ setter """
+    @size.setter
     def size(self, value):
         """ Sets size """
         if type(value) is not int:
