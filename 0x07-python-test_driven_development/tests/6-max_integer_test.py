@@ -34,5 +34,13 @@ class TestMaxInteger(unittest.TestCase):
         with self.assertRaises(TypeError):
             max_integer(string)
 
+    def test_max_beginning(self):
+        """Test for max at beginning"""
+        self.assertEqual(max_integer([100, 99, 98, 97, 96, 95]), 100)
+
+    def test_max_middle(self):
+        """Test for max in middle"""
+        self.assertEqual(max_integer([100, 30, 480, 42, 12]), 480)
+
 if __name__ == "__main__":
     unittest.main()
