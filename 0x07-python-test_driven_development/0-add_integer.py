@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-    File name : 0-add_integer.py
-    Integer addition: This function adds 2 integers
+    Adds 2 integers
     Prototype: def add_integer(a, b=98)
     Returns an integer: the addition of a and b
 """
