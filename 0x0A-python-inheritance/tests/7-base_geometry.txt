@@ -4,3 +4,6 @@
 >>> thing.integer_validator("string", 2, 10)
 Traceback (most recent call last):
 TypeError: integer_validator() takes 3 positional arguments but 4 were given
+>>> thing.integer_validator("infinitize", int('inf'))
+Traceback (most recent call last):
+ValueError: invalid literal for int() with base 10: 'inf'
