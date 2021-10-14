@@ -7,6 +7,3 @@
 [0, 1, 2]
 >>> a_list.print_sorted()
 [0, 1, 2]
->>> a_list.append(None)
-Traceback (most recent call last):
-NameError: name 'NULL' is not defined
