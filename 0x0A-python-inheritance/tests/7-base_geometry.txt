@@ -1,9 +1,6 @@
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 >>> thing = BaseGeometry()
->>> thing.integer_validator("anint", 99)
+>>> thing.integer_validator("my_int", 99)
 >>> thing.integer_validator("string", 2, 10)
-Traceback (most recent call last):
-TypeError: integer_validator() takes 3 positional arguments but 4 were given
->>> thing.integer_validator("threeargs", 0, 0)
 Traceback (most recent call last):
 TypeError: integer_validator() takes 3 positional arguments but 4 were given
