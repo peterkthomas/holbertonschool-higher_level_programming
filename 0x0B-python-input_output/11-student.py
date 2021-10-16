@@ -23,6 +23,6 @@ class Student(object):
         return diction
 
     def reload_from_json(self, json):
-        """reload_from_json""".
+        """reload_from_json"""
         for key, value in json.items():
             setattr(self, key, value)
