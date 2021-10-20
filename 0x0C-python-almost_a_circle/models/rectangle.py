@@ -105,9 +105,47 @@ class Rectangle(Base):
         for _ in range(self.y):
             print("")
 
-        for column in range(self.height):
+        for _ in range(self.height):
             for _ in range(self.x):
                 print(" ", end="")
             for _ in range(self.width):
                 print("#", end="")
             print("")
+
+    def update(self, *args, **kwargs):
+        """update rectangle"""
+        if args and args != 0:
+            count = 0
+            for arg in args:
+                if count == 0:
+                    if arg is None:
+                        super().__init__(self.width,
+                                         self.height, self.x,
+                                         self.y)
+                    else:
+                        self.id = arg
+                elif count == 1:
+                    self.width = arg
+                elif count == 2:
+                    self.height = arg
+                elif count == 3:
+                    self.x = arg
+                elif count == 4:
+                    self.y = arg
+                count += 1
+        elif kwargs and len(kwargs) != 0:
+            for key, value in kwargs.items():
+                if key == "id":
+                    if value is None:
+                        super().__init__(self.width, self.height,
+                                         self.x, self.y)
+                    else:
+                        self.id = value
+                elif key == "width":
+                    self.width = value
+                elif key == "height":
+                    self.height = value
+                elif key == "x":
+                    self.x = value
+                elif key == "y":
+                    self.y = value
