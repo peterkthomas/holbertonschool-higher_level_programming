@@ -51,3 +51,13 @@ class Base(object):
             tmp = cls(1)
         cls.update(**dictionary)
         return tmp
+
+    @classmethod
+    def load_from_file(cls):
+        """function that creates obj from file"""
+        try:
+            filename = cls.__name__ + ".json"
+            with open(filename, encoding="utf-8") as fd:
+                return cls.create(cls.from_json_string(fd))
+        except BaseException:
+            return []
