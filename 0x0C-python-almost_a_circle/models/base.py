@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""""
-	File: base.py
+"""
+File: base.py
 """
 
 
