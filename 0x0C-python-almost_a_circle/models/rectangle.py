@@ -7,6 +7,7 @@ from models.base import Base
 
 class Rectangle(Base):
     """Rectangle class definition"""
+
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initialization method"""
 
@@ -98,7 +99,6 @@ class Rectangle(Base):
     def area(self):
         """returns the area of the rectangle"""
         return self.width * self.height
-
 
     def display(self):
         """prints the rectangle with the # character"""
