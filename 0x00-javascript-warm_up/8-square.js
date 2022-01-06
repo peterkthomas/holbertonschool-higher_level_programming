@@ -1,9 +1,9 @@
 #!/usr/bin/node
-const item = 'X';
+const phrase = 'X';
 const x = process.argv[2];
 if (parseInt(x)) {
   for (let iter = 0; iter < x; iter++) {
-    console.log(phrases.repeat(item));
+    console.log(phrase.repeat(x));
   }
 } else {
   console.log('Missing size');
