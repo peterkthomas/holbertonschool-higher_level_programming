@@ -2,7 +2,7 @@
 if (process.argv.length < 4) {
   console.log('0');
 } else {
-  const x = process.argv.slice(2);
+  const data = process.argv.slice(2);
   data.sort((a, b) => b - a);
-  console.log(x[1]);
+  console.log(data[1]);
 }
