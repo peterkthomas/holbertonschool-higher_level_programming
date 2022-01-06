@@ -1,5 +1,5 @@
 #!/usr/bin/node
 // First JS Script
 
-const text = 'Javascript is amazing';
-console.log(text);
+const myVar = 'Javascript is amazing';
+console.log(myVar);
